@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1>Universitas MDP</h1>
-    <h2 class="text-success">Dosen</h2>
-    <p class="txt-danger bg-primary p-1 m-1 rounded">Daftar dosen Universitas MDP</p>
-    <!-- inline CSS -->
-    <p>Fakultas ilmu komputer dan rekayasa</p>
+    <hr />
+    <a href="index.html">Home</a>
+    <hr />
+    <h2>Pendaftaran mahasiswa baru</h2>
+    <!-- form -->
+    <form action="proses.php" method="post">
+        Nama Calon mahasiswa<br />
+        <input type="text" name="nama" id="nama" required/> <br />
+        
+        Tanggal Lahir<br />
+        <input type="date" name="tgl_lahir" id="tgl_lahir" /> <br />
+
+        Jenis Kelamin<br />
+        <input type="radio" name="Jk" id="jkl" value="L" checked /> Laki-laki <br>
+        <input type="radio" name="Jk" id="jkp" value="P" /> Perempuan <br>
+
+        Jalur Penerimaan <br />
+        <select name="jp" id="jp">
+            <option value="JTT">Jalur tanpa tes</option>
+            <option value="JT">Jalur tes</option>
+            <option value="JB">Jalur beasiswa</option>
+        </select> <br />
+        
+        <br />
+        <button type="submit">Simpan</button>
+        
+    </form>
 </body>
 </html>
