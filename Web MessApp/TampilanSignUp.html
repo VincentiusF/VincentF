@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessApp.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <br>
+        <p id="changingText" div class="title">WELCOME TO MESSAPP</div></p>
+        <link href="Home.html">
+        <script>
+            function changeColor(){
+                var text = document.getElementById('changingText');
+                var colors = ['red', 'blue', 'green', 'orange', 'purple'];
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                text.style.color = randomColor;
+            }
+            setInterval(changeColor, 1000);
+        </script>
+        <div class="line"></div>
+        <form action="proses1.html" method="post">
+            <div class="email">Email</div>
+            <div class="box2"><input type="text" id="email" required></div>
+            <div class="password">Password</div>
+            <div class="box"><input type="text" id="password" required></div>
+            <br><br>
+            <div class="send"><button type="Login">SignUp</button></div>
+        </form>
+    </div>
+    <a href="Home.html" class="Back">Home</a>
+</body>
+</html>

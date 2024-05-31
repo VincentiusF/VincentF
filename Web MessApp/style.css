@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: goldenrod;
+}
+
+.wrapper{
+    background-color: cornsilk;
+    height: 60%;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 30px;
+}
+.title{
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.line {
+    width: 50%;
+    margin: 250px auto;
+    border: none;
+    border-top: 5px solid black; 
+}
+.email{
+    text-align: center;
+    margin-top: -210px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.password{
+    text-align: center;
+    margin-top: 55px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.box {
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 67%;
+    left: 49%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}   
+ 
+.box2 {
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.Back {
+    color: blue;
+    text-decoration: underline;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.send {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+}

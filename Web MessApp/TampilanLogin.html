@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessApp.com</title>
+</head>
+    <body style="background-color: goldenrod;">
+        <div class="background-wrapper"></div>
+        <div style="background-color: #fff8dc; height: 60%; width: 50%; position: fixed;
+        top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; border-radius: 30px;">
+             <br>
+             <h1><p id="changingText" style="font-size: 90%; text-align: center; color: black;">
+                WELCOME TO MESSAPP</p></h1>
+             <script>
+                function changeColor(){
+                    var text = document.getElementById('changingText');
+                    var colors = ['red', 'blue', 'green', 'orange', 'purple'];
+                    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    text.style.color = randomColor;
+                }
+                setInterval(changeColor, 1000);
+            </script>
+
+            <hr width="99%" align="center" style="border-top: 5px solid black;">
+
+            <form action="proses.html" method="post">
+                <p style="text-align: center">Email</p>
+                <p style="text-align: center;"><input type="text" name="email" id="email" required/></p>
+                <p style="text-align: center">Password</p>
+                <p style="text-align:center ;"><input type="Password" name="password" id="password" required/></p>
+                <p style="margin-top: -10px; text-align: center;"><a href="Forgot Password">Forgot Password</a></p>
+                <p style="text-align: center;"><button type="Login">Login</button></p>  
+            </form>
+        </div>
+        <a href="Home.html" class="Back">Home</a>
+    </body>
+</html>
+    
